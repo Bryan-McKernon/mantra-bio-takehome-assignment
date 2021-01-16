@@ -2,18 +2,31 @@ import React from 'react';
 import './ComponentsContainer.scss';
 
 const ComponentsContainer = (props) => {
+    const Components = [];
+    for (let i in props.ComponentData) {
+        Components.push(            
+            <tr key={i}>                    
+            <th>{props.ComponentData[i].component_name}</th>
+            <th>{props.ComponentData[i].concentration_um}</th>                  
+            <th>{props.ComponentData[i].id}</th>                  
+            <th>{props.ComponentData[i].peak_height_mau}</th>                  
+            <th>{props.ComponentData[i].retention_time_seconds}</th>                  
+            <th>{props.ComponentData[i].run_id}</th>
+            </tr>                    
+        );
+    }
+
     return (
         <div className="ComponentsContainer">
            <table>
                 <tbody>
-                <tr>
-                    <th>Component Name: {props.ComponentData[0].component_name}</th>
-                    <th>Concentration UM: {props.ComponentData[0].concentration_um}</th>                  
-                    <th>id: {props.ComponentData[0].id}</th>                  
-                    <th>Peak Height MAU: {props.ComponentData[0].peak_height_mau}</th>                  
-                    <th>Retention Time Seconds: {props.ComponentData[0].retention_time_seconds}</th>                  
-                    <th>Run id: {props.ComponentData[0].run_id}</th>
-                </tr>
+                <th>Component Name</th>
+                <th>Concentration UM</th>                  
+                <th>id</th>                  
+                <th>Peak Height MAU</th>                  
+                <th>Retention Time Seconds</th>                  
+                <th>Run id</th>
+                {Components}
                 </tbody>
             </table>         
         </div>

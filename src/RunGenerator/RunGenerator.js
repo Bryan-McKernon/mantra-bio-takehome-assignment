@@ -8,7 +8,7 @@ const RunGenerator = (props) => {
     const ReceiveRuns = async () => {
         const RunsList = await getRuns(props.CurrentSequenceId, props.PassChromatogramData, props.PassComponentData);
         if (RunsList) setRuns(RunsList);
-        else setRuns("No runs found for sequence");
+        else setRuns("No runs found for this sequence");
     };
     
     useEffect(() => {
