@@ -1,4 +1,11 @@
 .ChromatogramContainer {
     position: relative;
     top: 350px;
+    border: solid black 2px;
+}
+
+.Chromatogram {
+    height: 50px;
+    width: 50px;
+    border: solid red 2px;
 }
