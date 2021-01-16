@@ -1,7 +1,7 @@
 import React from 'react';
 import Run from '../Run/Run';
 
-const generateRuns = (RunData) => {
+const generateRuns = (RunData, PassChromatogramData, PassComponentData) => {
     const RunArr = [];
     for (let i in RunData) {
         RunArr.push(
@@ -12,6 +12,8 @@ const generateRuns = (RunData) => {
                 sequence_id={RunData[i]["sequence_id"]}
                 chromatogram={RunData[i]["chromatogram"]}
                 components={RunData[i]["components"]}
+                PassChromatogramData={PassChromatogramData}
+                PassComponentData={PassComponentData}
             ></Run>
         );
     }

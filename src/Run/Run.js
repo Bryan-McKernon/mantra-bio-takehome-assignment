@@ -2,9 +2,13 @@ import React from 'react';
 import './Run.scss';
 
 const Run = (props) => {
-    console.log(props)
+    const PassData = () => {
+        props.PassChromatogramData(props.chromatogram);
+        props.PassComponentData(props.components);
+    }
+    
     return (
-        <tr>
+        <tr onClick={PassData}>
             <th>{props.id}</th>
             <th>{props.name}</th>
             <th>{props.sequence_id}</th>
