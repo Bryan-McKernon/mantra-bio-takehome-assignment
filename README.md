@@ -1,3 +1,10 @@
+To run this program please
+    1) Clone/download the files onto your local machine
+    2) Navigate (cd) into the folder using terminal
+    3) Run as you would any React application with "npm start"
+
+Further React details can be found below..
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
