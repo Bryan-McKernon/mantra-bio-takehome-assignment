@@ -17,8 +17,14 @@ const RunGenerator = (props) => {
 
     return (
         <div className="RunGeneratorContainer">
+            <h4>Please select a run to view Component and Chromatogram</h4>
             <table>
-                <tbody>               
+                <tbody>
+                    <tr>
+                        <th>id</th>
+                        <th>Name</th>
+                        <th>Sequence id</th>
+                    </tr>
                     {Runs}
                 </tbody>
             </table>

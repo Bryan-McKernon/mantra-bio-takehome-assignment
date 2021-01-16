@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import getSequences from './getSequences';
+import './SequenceGenerator.scss';
 
 const SequenceContainer = (PassSequenceIdToRuns) => {
     const [Sequences, setSequences] = useState();
@@ -14,14 +15,15 @@ const SequenceContainer = (PassSequenceIdToRuns) => {
     }, []);
 
     return (
-        <div>
+        <div className="SequenceGeneratorContainer">
+            <h4>Please click on a Sequence to view its Runs</h4>
             <table>
                 <tbody>
                 <tr>
                     <th>id</th>
-                    <th>name</th>
-                    <th>operator</th>
-                    <th>run time</th>
+                    <th>Name</th>
+                    <th>Operator</th>
+                    <th>Run Time</th>
                 </tr>
                 {Sequences}
                 </tbody>

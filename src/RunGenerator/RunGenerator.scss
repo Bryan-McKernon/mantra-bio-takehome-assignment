@@ -1,4 +1,21 @@
 .RunGeneratorContainer {
     position: relative;
-    top: 50px;
+    left: 50%;
+    transform: translate(-50%);
+    width: 750px;
+    top: 25px;
+    text-align: center;
+
+    table {
+        border: solid black 2px;
+        width: 100%;
+    }
+
+    table:hover {
+        cursor: pointer;
+    }
+
+    table tbody tr th {
+        border: solid black 1px;
+    }
 }

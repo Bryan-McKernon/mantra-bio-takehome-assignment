@@ -32,12 +32,12 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Mantra Bio HPLC</h1>
+      <h1 className="app-title">Mantra Bio HPLC</h1>
       <div className="MainContainer">
         <SequenceGenerator PassSequenceIdToRuns={PassSequenceIdToRuns}></SequenceGenerator>
         {CurrentRuns}
-        {CurrentChromatogram}
         {CurrentComponents}
+        {CurrentChromatogram}
       </div>
     </div>
   );

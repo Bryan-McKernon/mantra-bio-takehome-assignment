@@ -1,0 +1,24 @@
+.SequenceGeneratorContainer {
+    position: relative;
+    width: 750px;
+    left: 50%;
+    transform: translate(-50%);
+    text-align: left;
+
+    h4 {
+        text-align: center;
+    }
+
+    table {
+        border: solid black 2px;
+        width: 100%;
+    }
+
+    table:hover {
+        cursor: pointer;
+    }
+
+    table tbody tr th {
+        border: solid black 1px;
+    }
+}
