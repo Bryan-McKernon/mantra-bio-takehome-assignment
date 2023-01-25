@@ -1,11 +1,11 @@
 https://mantrabio-takehome-assignment.s3.us-west-1.amazonaws.com/index.html
 
-To run this program please \n
+To run this program please
     1) Clone/download the files onto your local machine
     2) Navigate (cd) into the folder using terminal
     3) Run as you would any React application with "npm start"
 
-Further React details can be found below..
+Further React details can be found below.
 
 # Getting Started with Create React App
 
